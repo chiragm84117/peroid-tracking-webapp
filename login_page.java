@@ -70,7 +70,10 @@ public class login_page extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "wrong password and username");
             
         }
-        
+        username=username_text.getText();
+        menu page=new menu(username);
+        page.setVisible(true);
+        dispose();
         }
         catch(Exception e){
             
@@ -194,11 +197,9 @@ public class login_page extends javax.swing.JFrame {
         // TODO add your handling code here:
         if(validation()==true){
         verify();
+        
         }
-        String username=username_text.getText();
-        menu page=new menu(username);
-        page.setVisible(true);
-        dispose();
+        
         
         
         
